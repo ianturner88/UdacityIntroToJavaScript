@@ -34,14 +34,6 @@ console.log("It costs $" + (adult ? "40.00" : "20.00") + " to attend the concert
 let eatsAnimals = true;
 let eatsPlants = true;
 
-let category;
-
-if (eatsPlants === true && eatsAnimals === true){
-    category = "omnivore";
-} else if (eatsPlants === true) {
-    category = "herbivore";
-} else if (eatsAnimals === true) {
-    category = "carnivore";
-}
+let category = (eatsPlants && eatsAnimals) ? "omnivore" : (!eatsPlants && eatsAnimals) ? "carnivore" : (eatsPlants && !eatsAnimals) ? "herbivore" : undefined;
 
 document.write(category);
