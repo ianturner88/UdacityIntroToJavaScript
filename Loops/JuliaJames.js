@@ -13,13 +13,13 @@ let x = 0;
 
 while (x < 21) {
     if (((x % 3) === 0) && ((x % 5) === 0)) {
-        document.write("JuliaJames/n");
+        console.log("JuliaJames" + "\n");
     } else if ((x % 3) === 0) {
-        document.write("Julia/n");
+        console.log("Julia" + "\n");
     } else if ((x % 5) === 0) {
-        document.write("James/n");
+        console.log("James" + "\n");
     } else {
-        document.write(x + "/n");
+        console.log(x + "\n");
     }
     x++;
 }
