@@ -8,3 +8,19 @@ Directions:
 Create a function called hasEnoughPlayers() that takes the team array as an argument and returns true or false depending on if the array has at least seven players.
 */
 
+let team = ["Oliver Wood", "George Weasley", "Fred Weasley", "Harry Potter"];
+
+function isEnough(team) {
+    /*checks if the array has at least 7 elements*/
+
+    if (team.length >= 7) {
+        /*the array has at least 7 elements*/
+        return true;
+    }
+
+    /*the array has less than 7 elements*/
+    return false;
+}
+
+console.log("Hogwarts");
+console.log(isEnough(team));
