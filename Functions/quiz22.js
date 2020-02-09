@@ -6,23 +6,6 @@ emotions("happy", laugh(2)); // you can use your laugh function from the previou
 Prints: "I am happy, haha!"
 */
 
-/*
-// Function expression that assigns the function displayFavorite 
-// to the variable favoriteMovie
-var favoriteMovie = function displayFavorite(movieName) {
-  console.log("My favorite movie is " + movieName);
-};
-
-// Function declaration that has two parameters: a function for displaying
-// a message, along with a name of a movie
-function movies(messageFunction, name) {
-  messageFunction(name);
-}
-
-// Call the movies function, pass in the favoriteMovie function and name of movie
-movies(favoriteMovie, "Finding Nemo");
-*/
-
 var favoriteMovie = function displayFavorite(movieName) {
     console.log("My favorite movie is " + movieName);
   };
