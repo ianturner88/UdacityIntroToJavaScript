@@ -27,3 +27,10 @@ let billsWithTip = bills.map(function(bill) {
 
 console.log("END bills");
 console.log(billsWithTip);
+
+/*
+Hey all, Monday (17th) is Family Day, so MEC is closed. Coyote is still open, however. Jamie and I will be at Coyote at noon... hope others can make it out :)
+
+*I'll repost this on Sunday, but just wanted to post it now, in the event people are planning their loong weekends early.
+
+*/
