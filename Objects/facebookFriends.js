@@ -14,9 +14,29 @@ removeFriend() - decreases the friend count by 1
 */
 
 let facebookProfile = {
-    name: "Ian",
-    numberOfFriends: 4,
-    messages: "Hello there",
 
-    post : function ()
-}
+    //properities
+    name : "Ian",
+    numberOfFriends : 4,
+    messages : ["Hello there", "Like my status", "Follow me!"],
+
+    //methods
+    postMessage : function (message) {
+        this.messages.push(message);
+    },
+    deleteMessage : function (index) {
+        this.messages.splice(index, 1);
+    },
+    addFriend : function () {
+        this.friends++;
+    },
+    removeFriend : function() {
+        this.friends--;
+    }
+};
+
+document.write("START");
+facebookProfile.addFriend();
+document.write(facebookProfile.numberOfFriends);
+facebookProfile.removeFriend();
+document.write(facebookProfile.numberOfFriends);
